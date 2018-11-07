@@ -1,0 +1,46 @@
+:root {
+    --primary-color: #0af;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Microsoft Jhenghei";
+}
+html,body,h1,h2,h3,h4,h5,h6,p,ol,ul,li,img,div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.clearfix::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+ul,ol,li {
+    list-style: none;
+}
+p {
+    line-height: 1.6em;
+}
+.btn {
+    display: inline-block;
+    border: 0;
+    text-decoration: none;
+    background-color: #007daf;
+    color: #ffffff;
+    padding: 10px 30px;
+
+    transition:all .3s;
+}
+.btn-light {
+    background-color: #89cee9;
+    color: #222;
+}
+.btn:hover {
+    /* background-color: var(--primary-color); */
+    background-color: #005779;
+    color: #fff;
+}

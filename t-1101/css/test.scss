@@ -1,0 +1,19 @@
+$rwd: (
+  sm: 540,
+  md: 960,
+  lg: 1200,
+);
+
+@each $name,$w in $rwd {
+  @media screen and (min-width: $w * 1px){
+    .fixed-width {
+      width: $w * 1px;
+      margin: auto;
+    }
+    @for $i from 1 through 12 {
+      .col-#{$name}-#{$i}{
+        width: 100% / 12 * $i;
+    }
+    }
+  }
+}
